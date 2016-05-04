@@ -7,8 +7,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 html {
     color: #222;
     font-size: 1em;
@@ -85,18 +86,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     background: #fff;
     color: #60606e;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 /* icons */
 
 .icon {
     font-family: 'fontello';
     font-style: normal;
+}
+.icon--medium {
+    font-size: 30px;
 }
 /* positions and sizes box */
 
@@ -130,6 +139,48 @@ body {
 .info-box {
     padding: 0;
 }
+
+/* links */
+.link-default {
+    display: block;
+    width: 160px;
+    height: 50px;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    background: #7beec7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.link-default:hover {
+    transition: all 1s ease-in;
+    background: #1ab07d;
+}
+.link-default--alt {
+    display: block;
+    width: 160px;
+    height: 50px;
+    padding: 16px;
+    text-align: center;
+    color: #7beec7;
+    background: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.link-default--alt:hover {
+    transition: all 1s ease-in;
+    color: #fff;
+    background: #1ab07d;
+}
+.link-default--right {
+    float: right;
+}
 /* images */
 
 .img-left {
@@ -158,6 +209,16 @@ body {
     display: block;
 }
 .sec--head .sec__box--main {} .sec--head .sec__box--nav {}
+.logo {
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 700;
+    font-size: 18px;
+    color: #60606e;
+}
+.logo:link{
+
+    text-decoration: none;
+}
 /* Main
    ========================================================================== */
 /* hero */
@@ -176,13 +237,70 @@ body {
     width: 1140px;
 }
 .header-box {
-    padding-top: 220px;
-    padding-bottom: 120px;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 200px;
+    padding-bottom: 115px;
     text-align: center;
 }
+.title-up{
+    width: 100px;
+    margin: 0 auto;
+    padding:  8px 8px 0 8px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    background: #7beec7;
+}
+.title {
+    margin: 0;
+    padding: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    border: 12px solid #60606e;
+}
+.subtitle {
+    margin: 20px 0;
+    line-height: 24px;
+    font-size: 16px;
+}
+/* history of agency */
+.decoration-title {
+    position: absolute;
+    margin-top: 22px;
+    width: 68px;
+    height: 20px;
+    background: #7beec7;
+}
+.box__title {
+    position: relative;
+    margin: 12px 0;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.box__title--alt {
+    text-align: left;
+}
+.box__content {
+    margin: 12px 0 120px 0;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.box__content--alt {
+    margin: 12px 0 44px 0;
+    text-align: left;
+    font-size: 16px;
+}
 /* section why choose us */
-
-.sec--why-choose-us {} .sec--why-choose-us .sec__inner {
+.sec--why-choose-us .sec__inner {
     width: 1140px;
 }
 .sec--why-choose-us .sec__inner:after {
@@ -191,16 +309,35 @@ body {
     clear: both;
     display: block;
 }
-.box--why-choose-us {
+.why-choose-us-box {
     width: calc((100% - 60px)/2);
     float: left;
     margin-right: 30px;
+    padding: 12px 0 18px 0;
     box-sizing: border-box;
     text-align: left;
 }
+.why-choose-us-box__title {
+    margin: 10px 0 14px 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #60606e;
+}
+.reasons-list {
+    padding-left: 0;
+    list-style-type: none;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #999;
+}
 /* section portfolio */
 
-.sec--portfolio {} .sec--portfolio .sec__inner {
+.sec--portfolio {
+    margin-top: 150px;
+} 
+.sec--portfolio .sec__inner {
     width: 1140px;
 }
 .sec--portfolio .sec__inner:after {
@@ -209,9 +346,23 @@ body {
     clear: both;
     display: block;
 }
+.categories-list {
+    padding: 0;
+    list-style-type: none;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #60606e;
+}
+.categories-list__item {
+    padding-left: 20px;
+}
 /* section newsletter */
 
 .sec--newsletter {
+    margin-top: 150px;
+    padding: 50px 0;
     background: #7beec7;
 }
 .sec--newsletter .sec__inner {
@@ -222,6 +373,64 @@ body {
     height: 0;
     clear: both;
     display: block;
+}
+.sec--newsletter .box__title {
+    color: #fff;
+}
+.newsletter-box {
+    padding: 20px 26px;
+    margin: 12px 0;
+    background: #fff;
+}
+.sec--newsletter .box__title--newsletter {
+    margin: 0;
+    line-height: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #60606e;
+}
+.newsletter-form {
+    position: relative;
+    padding: 0 0 30px 0;
+    line-height: 24px;
+}
+.newsletter-input {
+    width: 365px;
+    height: 50px;
+    padding: 2px 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #cdcdcd;
+}
+.newsletter-submit {
+    display: inline;
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    background: #7beec7;
+    border: none;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.newsletter-submit:hover {
+    transition: all 1s ease-in;
+    background: #1ab07d;
+}
+.link-default:hover {
+    transition: all 1s ease-in;
+    background: #1ab07d;
+}
+.newsletter-box .box__content--alt {
+    margin-bottom: 30px;
+    line-height: 24px;
 }
 /* Footer
    ========================================================================== */
