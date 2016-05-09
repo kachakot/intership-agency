@@ -117,6 +117,7 @@ body {
 .icon--red {
     color: #ea6a6a;
 }
+
 /* positions and sizes box */
 
 .box--left {
@@ -241,6 +242,13 @@ body {
     position: relative;
     z-index: 100;
 }
+.sec--head .box--main {
+    width: 40%;
+}
+.sec--head .box--nav {
+    text-align: right;
+    width: 60%;
+}
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -250,6 +258,18 @@ body {
 .logo:link {
     text-decoration: none;
 }
+.nav {
+    display: none; 
+}
+.nav.active {
+    display: block;
+    width: 100%;
+}
+.hamburger {
+    float: right;
+    color: #989898;
+}
+
 /* Homepage Main
    ========================================================================== */
 /* hero */
@@ -272,9 +292,12 @@ body {
 .header-box {
     margin: 0 auto;
     width: 50%;
-    padding-top: 200px;
-    padding-bottom: 115px;
-    text-align: center;
+    padding-top: 175px;
+    padding-bottom: 90px;
+    text-align: center;  
+}
+.header-box__inner {
+    outline: none;
 }
 .title-up {
     width: 100px;
@@ -530,29 +553,45 @@ body {
     line-height: 24px;
 }
 .newsletter-input {
+    float: left;
     width: 70%;
     height: 50px;
-    padding: 2px 20px;
     border: 1px solid #e5e5e5;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #cdcdcd;
     outline: none;
 }
 .newsletter-submit {
-    display: inline;
-    position: absolute;
     width: 30%;
     height: 50px;
-    background: #7beec7;
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    background: #7beec7;    
     color: #fff;
     outline: none;
+}
+.newsletter-legend {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #cdcdcd;
+    transition: all 0.3s;
+}
+.newsletter-legend:hover,
+.newsletter-input:hover + .newsletter-legend {
+    position: relative;
+    top: -10px;
+    left: 0;
+    height: 0;
+    margin-left: 4px;
+    font-size: 10px;
+    color: #7beec7;
+    transition: all 0.3s;
 }
 .newsletter-submit:hover {
     transition: all 1s ease-in;
@@ -1031,10 +1070,10 @@ body {
     margin-top: 34px;
 }
 .post-box__tools + .post-box__title {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 .post-box__header + .post-box__content {
-    margin-top: 22px;
+    margin-top: 18px;
 }
 .post-box__content + .post-box__continue {
     margin-top: 28px;

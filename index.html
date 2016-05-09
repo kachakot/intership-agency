@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,7 +25,17 @@
                     <a href="#" class="logo">AKAD.</a>
                 </div>
                 <div class="box box--right box--nav">
-                    <i class="icon icon-menu"></i>
+                    <a href="#" class="hamburger"><i class="icon icon-menu"></i></a>
+                    <nav class="nav">
+                        <ul class="map-list">
+                            <li class="map-list__item"><a href="index.html">Home</a></li>
+                            <li class="map-list__item"><a href="about.html">About us</a></li>
+                            <li class="map-list__item"><a href="services.html">Services</a></li>
+                            <li class="map-list__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="map-list__item"><a href="blog.html">Blog</a></li>
+                            <li class="map-list__item"><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -32,9 +43,16 @@
             <div class="sec__hero">
                 <div class="sec__inner">
                     <div class="header-box">
-                        <div class="title-up">we're</div>
-                        <h1 class="title">creative agency</h1>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="header-box__inner">
+                            <div class="title-up">we're</div>
+                            <h1 class="title">creative agency</h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="header-box__inner">
+                            <div class="title-up">we're</div>
+                            <h1 class="title">digital stuff</h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                     <div class="box box--left box--equal">
                         <img src="img/pic1.png" alt="desk">
@@ -160,10 +178,14 @@
                                 <h3 class="box__title box__title--newsletter">stay informed with our newsletter</h3>
                                 <p class="box__content box__content--alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <form action="index.html" method="post" class="newsletter-form">
-                                    <input type="email" name="email" class="newsletter-input" placeholder="your email">
-                                    <button type="submit" class="newsletter-submit" aria-label="Send">send</button>
+                                    <fieldset>
+                                        <input type="email" name="email" class="newsletter-input">
+                                        <legend class="newsletter-legend">your email</legend>
+                                        <button type="submit" class="newsletter-submit" aria-label="Send">send</button>
+                                    </fieldset>
                                 </form>
                             </div>
+                            <form>
                         </div>
                     </div>
                 </section>
@@ -198,6 +220,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/slick.min.js"></script>
         <script src="js/easygooglemaps.js"></script>        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

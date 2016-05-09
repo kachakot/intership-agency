@@ -1,4 +1,20 @@
 $(document).ready(function(){
+	$('.header-box').slick({
+	  dots: false,
+	  arrows: false,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear',
+	  autoplay: true,
+	  autoplaySpeed: 3000
+	});
+
+	$('.hamburger').on('click', function(e) {
+        $('.nav').toggleClass('active');
+        e.stopPropagation();
+    })
+
   $('.map-wrap').easyGoogleMaps({
     lat: 1.276816,
     lng: 103.848346,
