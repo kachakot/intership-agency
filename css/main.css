@@ -200,6 +200,15 @@ body {
 .link-default--right {
     float: right;
 }
+/* labels */
+
+.text-label {
+    padding: 4px 20px;
+    background: #7beec7;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
 /* images */
 
 .img-left {
@@ -403,13 +412,6 @@ body {
     color: #000;
     text-decoration: underline;
 }
-.text-label {
-    padding: 4px 20px;
-    background: #7beec7;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-}
 .masonry-portfolio {
     column-count: 3;
     column-gap: 1em;
@@ -454,7 +456,7 @@ body {
 .masonry-portfolio .item:nth-of-type(6) {
     background: #efeff0;
     width: 263px;
-    height: 263px;    
+    height: 263px;
 }
 .masonry-portfolio .item:nth-of-type(7) {
     background: #efeff0;
@@ -961,8 +963,8 @@ body {
     background: #7beec7;
     width: 35px;
 }
-
 /* section blog */
+
 .sec--blog {
     margin-top: 130px;
 }
@@ -976,7 +978,7 @@ body {
     display: block;
 }
 .box__inner {
-   margin-right: 40px;
+    margin-right: 40px;
 }
 .post-box {
     margin-bottom: 90px;
@@ -1002,7 +1004,7 @@ body {
     padding-right: 14px;
 }
 .post-box__title {
-    margin: 0;  
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1018,6 +1020,13 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+.post-box__continue a {
+    color: #60606e;
+    text-decoration: none;
+}
+.post-box__continue a:hover {
+    text-decoration: underline;
+}
 .post-box__photo + .post-box__tools {
     margin-top: 34px;
 }
@@ -1029,6 +1038,133 @@ body {
 }
 .post-box__content + .post-box__continue {
     margin-top: 28px;
+}
+.sidebar-box {
+    margin-bottom: 35px;
+}
+.sidebar-box__inner {
+    margin-left: 40px;
+}
+.search-form {
+    position: relative;
+    background: #ececec;
+    padding: 16px;
+}
+.search-input {
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #60606e;
+    background: #ececec;
+}
+.search-btn {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: #a7a7a8;
+    font-size: 18px;
+    outline: none;
+}
+.sidebar-box__title {
+    margin: 50px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.sidebar-box-tab {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+.sidebar-box-tab__item {
+    width: 32%;
+    padding: 0;
+    display: inline-block;
+    border-bottom: 2px solid #e6e6e6;
+}
+.sidebar-box-tab a {
+    color: #999;
+    text-decoration: none;
+}
+.sidebar-box-tab__item:hover {
+    border-bottom: 2px solid #7beec7;
+}
+.post-teaser-list {
+    padding: 0;
+    list-style-type: none;
+}
+.post-teaser-list__item {
+    margin-bottom: 10px;
+}
+.post-teaser-list__item:after {
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+}
+.post-teaser-list__item img {
+    float: left;
+}
+.post-teaser {
+    padding: 10px 0 0 100px;
+}
+.teaser-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.teaser-date {
+    font-size: 12px;
+    color: #9a9a9a;
+}
+.sidebar-box-list {
+    padding: 0;
+    list-style-type: none;
+}
+.sidebar-box-list__item {
+    padding-left: 5px;
+    line-height: 48px;
+    border-bottom: 1px solid;
+}
+.qty {
+    float: right;
+}
+.sidebar-box-list a {
+    color: #60606e;
+    text-decoration: none;
+}
+.sidebar-box-list__item:hover {
+    color: #60606e;
+    transition: all 0.5s ease-in;
+}
+.tags-list {
+    padding: 0;
+    list-style-type: none;
+}
+.tags-list__item {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.tags-list a {
+    color: #999;
+    text-decoration: none;
+}
+.tag {
+    padding: 6px 20px;
+    background: #e5e5e5;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 /* Footer
    ========================================================================== */
