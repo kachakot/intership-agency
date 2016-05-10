@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -24,7 +26,17 @@
                     <a href="index.html" class="logo">AKAD.</a>
                 </div>
                 <div class="box box--right box--nav">
-                    <i class="icon icon-menu"></i>
+                    <a href="#" class="hamburger"><i class="icon icon-menu"></i></a>
+                    <nav class="nav">
+                        <ul class="map-list">
+                            <li class="map-list__item"><a href="index.html">Home</a></li>
+                            <li class="map-list__item"><a href="about.html">About us</a></li>
+                            <li class="map-list__item"><a href="services.html">Services</a></li>
+                            <li class="map-list__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="map-list__item"><a href="blog.html">Blog</a></li>
+                            <li class="map-list__item"><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -32,8 +44,10 @@
             <div class="sec__hero-subsite">
                 <div class="sec__inner">
                     <div class="header-box">
-                        <h1 class="title title--alt">blog posts</h1>
-                        <p class="path">home / blog</p>
+                        <div class="header-box__inner">
+                            <h1 class="title title--alt">blog posts</h1>
+                            <p class="path">home / blog</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,21 +143,21 @@
                                         </div>
                                         <ul class="post-teaser-list">
                                             <li class="post-teaser-list__item">
-                                                <img src="img/teaser1.png" alt="teaser">
+                                                <img src="img/teaser1.png" alt="teaser" class="img-teaser">
                                                 <div class="post-teaser">
                                                     <div class="teaser-title">Magna mollis ultricies</div>
                                                     <div class="teaser-date">3th oct 2012</div>
                                                 </div>
                                             </li>
                                             <li class="post-teaser-list__item">
-                                                <img src="img/teaser2.png" alt="teaser">
+                                                <img src="img/teaser2.png" alt="teaser" class="img-teaser">
                                                 <div class="post-teaser">
                                                     <div class="teaser-title">Magna mollis ultricies</div>
                                                     <div class="teaser-date">3th oct 2012</div>
                                                 </div>
                                             </li>
                                             <li class="post-teaser-list__item">
-                                                <img src="img/teaser3.png" alt="teaser">
+                                                <img src="img/teaser3.png" alt="teaser" class="img-teaser">
                                                 <div class="post-teaser">
                                                     <div class="teaser-title">Magna mollis ultricies</div>
                                                     <div class="teaser-date">3th oct 2012</div>
@@ -287,7 +301,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/easygooglemaps.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/easygooglemaps.js"></script>   
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -299,3 +314,4 @@
         </script>
     </body>
 </html>
+
